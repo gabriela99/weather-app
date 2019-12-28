@@ -29,7 +29,8 @@ window.addEventListener("load", () => {
                 const { temperature, summary } = data.currently;
                 // Set DOM elements from the API
                 temperatureDegree.textContent = temperature;
-                
+                temperatureDescription.textContent = summary;
+                locationTimezone.textContent = data.timezone;
             })
         });
     }
